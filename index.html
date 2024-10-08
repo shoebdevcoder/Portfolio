@@ -18,11 +18,13 @@
 <body>
     <div class="container">
         <!-- This is for navbar -->
-        <div class="nav">
+        <div class="nav" id="home">
             <h1>Hello... My Portfolio</h1>
-            <a href=""><img src="./Images/home.gif" alt=""> Home</a>
+            <a href="#home"><img src="./Images/home.gif" alt=""> Home</a>
             <a href="#form"><img src="./Images/contact.gif" alt=""> Contact</a>
             <a href=""><img src="./Images/resume1.gif" alt=""> Resume</a>
+            <button id="dark" onclick="toggleButton()"><i class="fa-solid fa-sun"></i></button>
+            <button id="light" onclick="toggleLight()"><i class="fa-regular fa-sun"></i></button>
         </div>
 
         <!-- This is for header -->
@@ -74,16 +76,23 @@
                 <h1>Skills</h1>
                 <ul>
                     <li>
-                        <h3>B.Tech in Information Technology</h3>
-                        <p>MGM's College Of Engineering, Nanded<br>CGPA: 6.9</p>
+                        <h3>REACT JS</h3>
+                        <h3>NODE JS</h3>
                     </li>
                     <li>
-                        <h3>B.Tech in Information Technology</h3>
-                        <p>MGM's College Of Engineering, Nanded<br>CGPA: 6.9</p>
+                        <h3>EXPRESS JS</h3>
+                        <h3>MONGO DB</h3>
                     </li>
                     <li>
-                        <h3>B.Tech in Information Technology</h3>
-                        <p>MGM's College Of Engineering, Nanded<br>CGPA: 6.9</p>
+                        <h3>PYTHON</h3>
+                        <h3>TailWind CSS</h3>
+                    </li>
+                    <li>
+                        <h3>BOOTSTRAP</h3>
+                    </li>
+                    <li>
+                    </li>
+                    <li>
                     </li>
                 </ul>
             </div>
@@ -111,28 +120,38 @@
         <!-- This is for footer -->
         <div class="footer">
             <!-- Contact Details -->
-            <h1>My Contact</h1>
-            <form action="" id="form">
-                <div>
-                    <label for="">Name:</label>
-                    <input type="text" name="" id="" placeholder="Enter your Name">
-                    <label for="">Email:</label>
-                    <input type="email" name="" id="" placeholder="xyz@gmail.com">
-                </div>
-                <div class="text-area">
-                    <label for="">Message</label>
-                    <textarea name="" id="" placeholder="Write Your Message"></textarea>
-                </div>
-                <div class="btn">
-                    <button>Cancel</button>
-                    <button>Submit</button>
-                </div>
-            </form>
+            <div class="contact">
+
+                <h1>My Contact</h1>
+                <form action="" id="form">
+                    <div>
+                        <label for="">Name:</label>
+                        <input type="text" name="" id="" placeholder="Enter your Name">
+                        <label for="">Email:</label>
+                        <input type="email" name="" id="" placeholder="xyz@gmail.com">
+                    </div>
+                    <div class="text-area">
+                        <label for="">Message</label>
+                        <textarea name="" id="" placeholder="Write Your Message"></textarea>
+                    </div>
+                    <div class="btn">
+                        <button>Cancel</button>
+                        <button>Submit</button>
+                    </div>
+                </form>
+            </div>
         </div>
     </div>
 
+    <div class="footer-main">
+        <ul>
+            <li><a href="">Contact Me</a></li>
+        </ul>
+        <h3>Copyright @shoebsiddiqui</h3>
+    </div>
 
 
+    <script src="https://unpkg.com/scrollreveal"></script>
     <script src="script.js"></script>
 </body>
 

@@ -49,6 +49,26 @@
     height: 80px;
 }
 
+.nav button{
+    height: 40px;
+    width: 40px;
+    /* padding: 20px; */
+    font-size: 30px;
+    background-color: transparent;
+    border: none;
+    background-color: skyblue;
+    border-radius: 50%;
+}
+
+.nav #light{
+    display: none;
+}
+
+.nav button:hover{
+    background-color: skyblue;
+    border-radius: 50%;
+}
+
 .header{
     height: 600px;
     display: flex;
@@ -192,6 +212,7 @@
     padding: 10px;
     /* border: 1px solid red; */
     text-decoration: none;
+    text-align: start;
 }
 
 .skills h1{
@@ -246,15 +267,23 @@
     flex-direction: column;
 }
 
-.footer h1{
+.footer .contact{
+    /* border: 1px solid red; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.contact h1{
     border-bottom: 5px solid skyblue;
     display: flex;
     justify-content: start;
     align-items: flex-start;
 }
 
-.footer form{
-    border: 1px solid red;
+.contact form{
+    /* border: 1px solid red; */
     padding: 30px;
     height: 500px;
     display: flex;
@@ -263,11 +292,11 @@
     flex-direction: column;
 }
 
-.footer label{
+.contact label{
     color: var(--headColor);
 }
 
-.footer form input{
+.contact form input{
     width: 300px;
     height: 40px;
     border: none;
@@ -278,18 +307,18 @@
     padding-left: 10px;
 }
 
-.footer form input:hover{
+.contact form input:hover{
     border: 2px solid skyblue;
     box-shadow: 0px 0px 10px skyblue;
 }
 
-.footer .text-area{
+.contact .text-area{
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.footer .text-area textarea{
+.contact .text-area textarea{
     height: 100px;
     width: 660px;
     border: none;
@@ -298,23 +327,46 @@
     padding-left: 10px;
 }
 
-.footer .text-area textarea:hover{
+.contact .text-area textarea:hover{
     border: 2px solid skyblue;
     box-shadow: 0px 0px 10px skyblue;
 }
 
-.footer .btn{
+.contact .btn{
     width: 800px;
     /* border: 1px solid red; */
     display: flex;
     justify-content: space-around;
 }
 
-.footer .btn button{
+.contact .btn button{
     padding: 10px;
     width: 200px;
     border: none;
     border-radius: 10px;
     box-shadow: 0px 0px 10px skyblue;
     background: none;
+}
+
+.footer-main{
+    height: 200px;
+    background-color: rgb(6, 0, 69);
+    width: 100%;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    a{
+        color: white;
+        text-decoration: none;
+    }
+    ul{
+        list-style: none;
+    }
+}
+
+.dark-mode{
+    background-color: black;
+    color: white;
 }

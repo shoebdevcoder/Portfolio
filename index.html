@@ -1,10 +1,139 @@
+<!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <title>Portfolio</title>
 </head>
+
 <body>
-    
+    <div class="container">
+        <!-- This is for navbar -->
+        <div class="nav">
+            <h1>Hello... My Portfolio</h1>
+            <a href=""><img src="./Images/home.gif" alt=""> Home</a>
+            <a href="#form"><img src="./Images/contact.gif" alt=""> Contact</a>
+            <a href=""><img src="./Images/resume1.gif" alt=""> Resume</a>
+        </div>
+
+        <!-- This is for header -->
+        <div class="header">
+            <div class="img">
+                <img src="./Images/My Image.png" alt="">
+            </div>
+            <div class="info">
+                <h1>Hi... I am Shoeb</h1>
+                <p>Passionate software engineer specializing in full-stack development, with expertise in MERN stack
+                    technologies. Excited about tackling complex challenges and contributing to innovative projects.
+                    Let's connect and explore opportunities in the dynamic world of web development!</p>
+            </div>
+        </div>
+
+        <div class="social-media">
+            <h1>Social Media</h1>
+            <ul>
+                <li><a href="">Instagram <i class="fa-brands fa-instagram"></i></a></li>
+                <li><a href="">GitHub <i class="fa-brands fa-github"></i></a></li>
+                <li><a href="">FaceBook <i class="fa-brands fa-facebook"></i></a></li>
+                <li><a href="">Email <i class="fa-solid fa-envelope"></i></a></li>
+            </ul>
+        </div>
+
+        <!-- This is for main -->
+        <div class="main">
+            <!-- Education part -->
+            <div class="edu">
+                <h1>Education</h1>
+                <ul>
+                    <li>
+                        <h3>B.Tech in Information Technology</h3>
+                        <p>MGM's College Of Engineering, Nanded<br>CGPA: 6.9</p>
+                    </li>
+                    <li>
+                        <h3>B.Tech in Information Technology</h3>
+                        <p>MGM's College Of Engineering, Nanded<br>CGPA: 6.9</p>
+                    </li>
+                    <li>
+                        <h3>B.Tech in Information Technology</h3>
+                        <p>MGM's College Of Engineering, Nanded<br>CGPA: 6.9</p>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- This is skill part -->
+            <div class="skills">
+                <h1>Skills</h1>
+                <ul>
+                    <li>
+                        <h3>B.Tech in Information Technology</h3>
+                        <p>MGM's College Of Engineering, Nanded<br>CGPA: 6.9</p>
+                    </li>
+                    <li>
+                        <h3>B.Tech in Information Technology</h3>
+                        <p>MGM's College Of Engineering, Nanded<br>CGPA: 6.9</p>
+                    </li>
+                    <li>
+                        <h3>B.Tech in Information Technology</h3>
+                        <p>MGM's College Of Engineering, Nanded<br>CGPA: 6.9</p>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- Projects -->
+            <div class="projects">
+                <h1>Projects</h1>
+                <ul>
+                    <li>
+                        <h3>B.Tech in Information Technology</h3>
+                        <p>MGM's College Of Engineering, Nanded<br>CGPA: 6.9</p>
+                    </li>
+                    <li>
+                        <h3>B.Tech in Information Technology</h3>
+                        <p>MGM's College Of Engineering, Nanded<br>CGPA: 6.9</p>
+                    </li>
+                    <li>
+                        <h3>B.Tech in Information Technology</h3>
+                        <p>MGM's College Of Engineering, Nanded<br>CGPA: 6.9</p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- This is for footer -->
+        <div class="footer">
+            <!-- Contact Details -->
+            <h1>My Contact</h1>
+            <form action="" id="form">
+                <div>
+                    <label for="">Name:</label>
+                    <input type="text" name="" id="" placeholder="Enter your Name">
+                    <label for="">Email:</label>
+                    <input type="email" name="" id="" placeholder="xyz@gmail.com">
+                </div>
+                <div class="text-area">
+                    <label for="">Message</label>
+                    <textarea name="" id="" placeholder="Write Your Message"></textarea>
+                </div>
+                <div class="btn">
+                    <button>Cancel</button>
+                    <button>Submit</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+
+
+    <script src="script.js"></script>
 </body>
+
 </html>

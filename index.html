@@ -13,6 +13,13 @@
         integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <title>Portfolio</title>
+    <script src="https://cdn.jsdelivr.net/npm/emailjs-com@2.6.4/dist/email.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script type="text/javascript">
+        (function(){
+            emailjs.init("Your_user_id");
+        })();
+    </script>
 </head>
 
 <body>
@@ -43,7 +50,7 @@
         <div class="social-media">
             <h1>Social Media</h1>
             <ul>
-                <li><a href="">Instagram <i class="fa-brands fa-instagram"></i></a></li>
+                <li><a href="https://www.instagram.com/">Instagram <i class="fa-brands fa-instagram"></i></a></li>
                 <li><a href="">GitHub <i class="fa-brands fa-github"></i></a></li>
                 <li><a href="">FaceBook <i class="fa-brands fa-facebook"></i></a></li>
                 <li><a href="">Email <i class="fa-solid fa-envelope"></i></a></li>
@@ -126,17 +133,17 @@
                 <form action="" id="form">
                     <div>
                         <label for="">Name:</label>
-                        <input type="text" name="" id="" placeholder="Enter your Name">
+                        <input type="text" name="name" id="name" placeholder="Enter your Name" required>
                         <label for="">Email:</label>
-                        <input type="email" name="" id="" placeholder="xyz@gmail.com">
+                        <input type="email" name="email" id="email" placeholder="xyz@gmail.com" required>
                     </div>
                     <div class="text-area">
                         <label for="">Message</label>
-                        <textarea name="" id="" placeholder="Write Your Message"></textarea>
+                        <textarea name="message" id="message" placeholder="Write Your Message" rows="4" cols="50" required></textarea>
                     </div>
                     <div class="btn">
                         <button>Cancel</button>
-                        <button>Submit</button>
+                        <button type="button" onclick="sendEmail()">Submit</button>
                     </div>
                 </form>
             </div>

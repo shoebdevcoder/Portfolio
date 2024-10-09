@@ -4,7 +4,17 @@
     box-sizing: border-box;
     font-family: "Nunito", sans-serif;
     font-optical-sizing: auto;
+    /* color: black; */
+    transition: background-color 0.5s, color 0.5s;
 }
+
+.dark-mode{
+    color: white;
+    a{
+        color: white;
+    }
+}
+
 :root{
     --color: black;
     --headColor: skyblue;
@@ -258,17 +268,19 @@
 }
 
 .footer{
-    margin-top: 50px;
     height: 500px;
     padding: 10px;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    border: 1px solid red;
 }
 
 .footer .contact{
-    /* border: 1px solid red; */
+    border: 1px solid red;
+    padding: 10px;
+    height: 500px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -333,6 +345,7 @@
 }
 
 .contact .btn{
+    margin-top: 40px;
     width: 800px;
     /* border: 1px solid red; */
     display: flex;
@@ -369,4 +382,34 @@
 .dark-mode{
     background-color: black;
     color: white;
+    a,p,button, h1{
+        color: white;
+    }
+    .social-media{
+        color: white;
+        a{
+            color: white;
+        }
+    }
+    .edu{
+        color: white;
+        background-color: black;
+        h1{
+            color: white;
+        }
+    }
+    .skills{
+        color: white;
+        background-color: black;
+        h1{
+            color: white;
+        }
+    }
+    .projects{
+        color: white;
+        background-color: black;
+        h1{
+            color: white;
+        }
+    }
 }
